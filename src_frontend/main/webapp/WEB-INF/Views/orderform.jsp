@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%-- <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
@@ -38,11 +38,11 @@
                             <div class="col-xs-6 col-sm-6 col-md-6">
                                 <address>
                                     <strong>Shipping Address</strong><br/>
-                                    ${order.cart.customer.shippingAddress.streetname}
+                                    ${shippingaddressform.streetname}
                                 <br/>
-                                    ${order.cart.customer.shippingAddress.city}, ${order.cart.customer.shippingAddress.state}
+                                    ${shippingaddressform.city}, ${shippingaddressform.state}
                                 <br/>
-                                     ${order.cart.customer.shippingAddress.country}, ${order.cart.customer.shippingAddress.zipcode}
+                                     ${shippingaddressform.country}, ${shippingaddressform.zipcode}
                                 </address>
                             </div>
                             <div class="col-xs-6 col-sm-6 col-md-6 text-right">
@@ -69,6 +69,7 @@
                                     <tr>
                                         <td>Product</td>
                                         <td>#</td>
+                                       <!--<td class="text-center">Quantity</td>-->
                                         <td class="text-center">Price</td>
                                         <td class="text-center">Total</td>
                                     </tr>
@@ -117,3 +118,4 @@
 </div>
 </body>
 </html>
+ --%>

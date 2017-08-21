@@ -22,51 +22,59 @@
 <form:hidden path="id"/>
 <br><br><br>
 <div class="form-group">
-
- Enter Product Name:
-<form:input path="productName" class="form-control"/><br>
+<div class="col-sm-10">
+<form:label class="control-label col-sm-4" path="productName">Enter Product Name:</form:label> 
+<form:input path="productName" class="form-control" /><br>
 <form:errors path="productName" cssStyle="color:red"></form:errors>
 </div>
+</div>
 <div class="form-group">
-Enter Price Value:
-
+<div class="col-sm-10">
+<form:label class="control-label col-sm-4" path="price">Enter Price Value:</form:label> 
 <form:input path="price"  class="form-control"/><br>
 <form:errors path="price" cssStyle="color:red"></form:errors>
 </div>
-<div class="form-group">
-Enter Quantity:
-
-<form:input path="quantity" id="quan" class="form-control"/><br>
 </div>
 <div class="form-group">
-Enter Description:
-
+<div class="col-sm-10">
+<form:label class="control-label col-sm-4" path="quantity">Enter Quantity:</form:label> 
+<form:input path="quantity" id="quan" class="form-control"/><br>
+</div>
+</div>
+<div class="form-group">
+<div class="col-sm-10">
+<form:label class="control-label col-sm-4" path="description">Enter Description:</form:label> 
 <form:textarea path="description"  id="des" class="form-control"/><br>
 <form:errors path="description" cssStyle="color:red"></form:errors>
 </div>
-
+</div>
+<br><br><br><br>
 <div class="form-group">
-
-Select Category
+<div class="col-sm-10">
+<label>Select Category</label>
 <c:forEach items="${categories}" var="c">
    <form:radiobutton path="category.id" value="${c.id}"/>${c.categoryName}
 </c:forEach>
 </div>
-
-
+</div>
+<br><br><br><br>
 <div class="form-group">
-
-  Upload an image 
-  <input type="file" name="image">
+<div class="col-sm-10">
+ <label>Upload an image </label> 
+  <input type="file" name="image" >
   </div>
-  
+  </div>
+  <br><br>
   <div class="form-group">
-  
+  <div class="col-sm-offset-2 col-sm-4">
   <input type="submit"value="addproduct">
   </div>
+  </div>
+  
   </form:form>
  
  
   </div>
+ 
 </body>
 </html>

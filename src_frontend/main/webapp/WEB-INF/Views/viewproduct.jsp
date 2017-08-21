@@ -9,8 +9,12 @@
 <title>Insert title here</title>
 </head><br><br><br>
 <body>
+<br><br>
+<div class="container">
 <b>Details about the Product</b>
+<br>
 <table>
+
 <c:url value="/resources/images/${product.id}.png" var="imageUrl"></c:url>
 <tr>
 <td><img src="${imageUrl }" height="200" width="200"></td></tr>
@@ -35,6 +39,9 @@
 Out Of Stock
 </c:if>
 
+
+
+
 <c:if test="${product.quantity!=0 }">
 <c:url value="/cart/addtocart/${product.id }" var="url"></c:url>
 <form action="${url }">
@@ -49,5 +56,6 @@ Enter Units<input  type="text" name="units"><br>
 <c:url value="/all/addproduct/viewproduct" var="url1"></c:url>
 <a href="${url1 }">Back to product list</a>
 <br>
+</div> 
 </body>
 </html>

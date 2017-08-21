@@ -43,7 +43,7 @@
   
   <div class="collapse navbar-collapse" id="collapse-example">
   <ul class="nav navbar-nav">
-<c:url value="/home" var="url1"></c:url>
+<c:url value="/" var="url1"></c:url>
   <li class="active"><a href="${url1 }">Home<span class="sr-only">You are in home page link</span></a></li>
  
  <c:url value="/contactus" var="url2"></c:url>

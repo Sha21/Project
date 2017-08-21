@@ -48,6 +48,9 @@ public class CartItemController {
 			System.out.println(id);
 			if(cartItem.getProduct().getId()==id)
 			{
+				//int quantity=product.getQuantity()-1;
+				//units=product.getQuantity()-1;
+				//int Quantity=cartItem.getQuantity()-Quantity;
 				cartItem.setQuantity(units);
 				cartItem.setTotalPrice(product.getPrice() * units);
 				cartItemService.addCartItem(cartItem);
